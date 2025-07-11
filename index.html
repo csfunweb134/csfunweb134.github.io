@@ -112,6 +112,32 @@
       background-color: #ffcc80;
       padding: 10px;
     }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 columns */
+      grid-template-rows: repeat(3, 100px);  /* 3 rows */
+      gap: 10px;
+      padding: 20px;
+      background-color: #ddd;
+      width: 80%;
+      margin: auto;
+    }
+
+    .grid-item {
+      background-color: #4CAF50;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2em;
+      border-radius: 6px;
+    }
+
+    .item-special {
+      background-color: #ff9800;
+      grid-column: span 2; /* spans 2 columns */
+      grid-row: span 2;    /* spans 2 rows */
+    }
 
     </style>
   </head>
@@ -141,6 +167,17 @@
     <div class="float-left">This box floats left. Add more content or images here.</div>
     <div class="float-right">This one floats right. See how they align!</div>
   </div>
+   <div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item item-special">Big Item</div>
+    <div class="grid-item">6</div>
+    <div class="grid-item">7</div>
+    <div class="grid-item">8</div>
+    <div class="grid-item">9</div>
+  </div>
 
      <table>
     <tr>
@@ -164,7 +201,10 @@
       <td class="note">Inactive</td>
     </tr>
   </table>
-
+  <audio controls>
+      <source src="embrace-364091.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
     <a href = "https://www.bing.com/search?qs=LT&pq=free+audio+compressor%5c&sk=CSYN1&sc=9-22&q=free+audio+compressor+online&cvid=79a637f1d8d4486aa9887b631072a12c&gs_lcrp=EgRlZGdlKgYIARAAGEAyBggAEEUYOTIGCAEQABhAMgYIAhAAGEAyBggDEAAYQDIGCAQQABhAMgYIBRAAGEAyBggGEAAYQDIGCAcQABhAMgYICBAAGEDSAQg3ODU5ajBqOagCCLACAQ&FORM=ANAB01&PC=ACTS" style="color: white;">Random</a>
     <a href = "test.html">Test</a>
 
